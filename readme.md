@@ -1,44 +1,53 @@
-# Discord Avatar Decoration Bot
+Discord Avatar Decoration Bot
 
-A powerful Discord bot that allows users to add decorative effects to their profile pictures. Users can choose from a variety of decorations including Discord's official avatar decorations and country flags.
+An advanced Discord bot that lets users enhance their profile pictures with stylish animated effects. It offers a wide range of decorations, including official Discord avatar styles and country flags.
 
-![Bot Showcase](https://i.imgur.com/4m0b8w3.png)
+✨ Key Features
 
-## ✨ Features
+Profile Effects: Add animated decorations to your Discord avatar.
 
-- **Avatar Decorations**: Apply animated decorative effects to user avatars
-- **Extensive Collection**: Support for Discord's official avatar decorations and country flags
-- **Channel Restrictions**: Configure specific channels where the bot can be used
-- **User-Friendly Interface**: Clean UI with categorized effects and navigation buttons
-- **Random Effects**: Get a random decoration with one click
-- **Slash Commands**: Full support for Discord's slash commands system
-- **Legacy Commands**: Also supports traditional prefix commands (`!effect`)
-- **Cooldown System**: Prevents abuse and rate limiting
-- **Robust Error Handling**: Comprehensive error logging and recovery
-- **High-Quality Output**: Generates high-resolution avatar GIFs
+Large Collection: Includes Discord’s official decorations and international flag styles.
 
-## 📋 Requirements
+Channel Control: Limit the bot’s usage to chosen channels.
 
-- Node.js 16.9.0 or higher
-- A Discord Bot Token
-- Discord.js v14
+Simple Interface: Organized menus with clean navigation for easy use.
 
-## 🚀 Installation
+Randomizer: Instantly apply a random effect with one command.
 
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/wickstudio/discord-avatar-decoration-bot.git
-   cd discord-avatar-decoration-bot
-   ```
+Slash Command Ready: Fully supports Discord’s modern slash commands.
 
-2. **Install dependencies**:
-   ```bash
-   npm install
-   ```
+Classic Commands: Legacy prefix commands (like !effect) are also available.
 
-3. **Configure the bot** in `config.js`:
-   ```javascript
-   module.exports = {
+Anti-Spam Cooldowns: Prevents overuse with built-in cooldown management.
+
+Stable & Reliable: Strong error handling for smooth operation.
+
+High Quality: Produces crisp, high-resolution animated GIFs of avatars.
+
+📋 Requirements
+
+Node.js 16.9.0 or higher
+
+A Discord Bot Token
+
+Discord.js v14
+
+🚀 Installation
+
+Clone the repository:
+
+git clone https://github.com/claire/discord-avatar-decoration-bot.git
+cd discord-avatar-decoration-bot
+
+
+Install dependencies:
+
+npm install
+
+
+Configure the bot in config.js:
+
+module.exports = {
   token: "TOKEN", // Your bot token
   guildId: "ID", // Your server ID (for guild commands)
   
@@ -52,75 +61,76 @@ A powerful Discord bot that allows users to add decorative effects to their prof
   gifQuality: 10, // GIF quality (1-30)
   frameDelay: 100, // Delay between frames in ms
 };
-   ```
 
-4. **Start the bot**:
-   ```bash
-   npm start
-   ```
 
-## 💻 Usage
+Start the bot:
 
-### Commands
+npm start
 
-- `/effect` - Opens the avatar decoration menu (slash command)
-- `/help` - Shows bot help and information
-- `/ping` - Checks bot response time and connection status
-- `!effect` - Text command to open the avatar decoration menu
+💻 Usage
+Commands
 
-### How to Use
+/effect - Opens the avatar decoration menu (slash command)
 
-1. Type `/effect` or `!effect` in any allowed channel
-2. Select a decoration category from the dropdown menus
-3. Click on the desired effect
-4. The bot will reply with your decorated avatar as a GIF
+/help - Shows bot help and information
 
-### Channel Restrictions
+/ping - Checks bot response time and connection status
 
-You can restrict the bot to only work in specific channels:
+!effect - Text command to open the avatar decoration menu
 
-- **Allow in specific channels**: Add channel IDs to the `allowedChannelIds` array
-- **Disable completely**: Set `allowedChannelIds` to an empty array `[]`
-- **Allow everywhere**: Set `allowedChannelIds` to `null` or remove the setting
+How to Use
 
-## 🛠️ Development
+Type /effect or !effect in any allowed channel
 
-- **Run with auto-restart**:
-  ```bash
-  npm run dev
-  ```
+Choose a decoration category from the dropdown menu
 
-- **Check for linting issues**:
-  ```bash
-  npm run lint
-  ```
+Select your desired effect
 
-## 🔧 Advanced Configuration
+The bot replies with your customized avatar as a GIF
 
-The bot allows for detailed customization:
+Channel Restrictions
 
-- **Button Customization**: Navigation buttons support custom emojis
-- **GIF Quality**: Adjustable avatar size and GIF quality settings
-- **Cooldown Management**: Configurable cooldown settings to prevent spam
+Restrict usage: Add specific channel IDs to allowedChannelIds.
 
-## ⚠️ Troubleshooting
+Disable everywhere: Set allowedChannelIds to [].
 
-If you encounter issues:
+Allow all channels: Set allowedChannelIds to null.
 
-- Ensure your bot has the correct permissions (Send Messages, Embed Links, Attach Files)
-- Check that your bot token is valid
-- Verify that the required intents are enabled in the Discord Developer Portal
+🛠️ Development
 
-## 🙏 Credits
+Run with auto-restart:
 
-- Created by [CLAIRE](https://discord.gg/claire)
-- Uses Discord.js for bot functionality
-- Uses canvas and gif-encoder-2 for image processing
+npm run dev
 
-## 📄 License
 
-MIT License
+Check for linting issues:
 
-## 🔗 Support
+npm run lint
 
-For support, join our [Discord Server](https://discord.gg/claire)
+🔧 Advanced Configuration
+
+Customize navigation buttons with custom emojis.
+
+Adjust avatar size and GIF quality for better visuals.
+
+Manage command cooldowns to prevent spam.
+
+⚠️ Troubleshooting
+
+Make sure the bot has permissions (Send Messages, Embed Links, Attach Files).
+
+Verify your bot token is valid.
+
+Check that required intents are enabled in the Discord Developer Portal.
+
+🙏 Credits
+
+Created by CLAIRE
+
+Built with Discord.js for functionality
+
+Uses Canvas and gif-encoder-2 for image processing
+
+📄 License
+
+MIT License — Copyright (c) 2025 CLAIRE
